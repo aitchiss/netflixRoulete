@@ -8,6 +8,7 @@ const MovieTableCell = (props) => {
       {props.value.show_title}
     </h3>
     <img className = "image" src = {props.value.poster}/> 
+    <p>{props.value.summary}</p>
     </div>
     )
 

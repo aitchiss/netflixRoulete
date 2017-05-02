@@ -1,9 +1,22 @@
+body{
+  background-image: url('http://img.timeoutbeijing.com/201304/20130424044353567_Medium.jpg');
+  border: 4px solid #00cc00;
+  margin: 0;
+  border-radius: 20px;
+  font-family: 'Gloria Hallelujah', cursive;
+  
+}
+
+
+
 .movie-title{
-border: black 1px solid;
-width: 120px;
+border: #00cc00 3px solid;
+border-radius: 20px;
+width: 250px;
 font-size: 12px;
 margin:20px;
 flex-flow:column;
+background-color: beige;
 }
 
 .table-cell{
@@ -18,18 +31,31 @@ flex-flow:column;
 }
 
 .header{
-
+  color: #00cc00;
+  font-size: 2em;
+  text-shadow: 3px 3px 3px #00cc99;
+  text-align: center;
+  text-decoration: underline;
 }
 
 .image{
   width: 60%;
   margin-left: 18%;
   margin-bottom: 9%;
+  border: 4px solid hotpink;
+  border-radius: 20px;
 }
 
 h3{
   display: inline-block;
   border-bottom: 2px hotpink dotted;
-  justify-content: center;
-  margin-left: 8%;
+  /*text-align: center;*/
+  margin-left: 15%;
+  
+  font-size: 1.7em;
+}
+
+p{
+  margin: 15px;
+  font-size: 1.3em;
 }
