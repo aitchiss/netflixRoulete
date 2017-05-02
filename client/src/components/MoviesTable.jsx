@@ -4,12 +4,12 @@ const MoviesTable = (props) => {
 
   const cells = props.movies.map((movie)=>{
 
-    return <MovieTableCell value={movie} key={movie.unit}/>
+    return <MovieTableCell value={movie} key={movie.unit} className = "table-cell" />
 
   }) 
 
   return(
-    <div>
+    <div className = "table">
       {cells}
     </div>
     )

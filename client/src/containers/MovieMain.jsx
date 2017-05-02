@@ -14,7 +14,7 @@ class MovieMain extends React.Component{
   }
 
   componentDidMount(){
-    const url = 'http://netflixroulette.net/api/api.php?actor=Jack%20Nicholson'
+    const url = 'http://netflixroulette.net/api/api.php?actor=Nicole%20Kidman'
     const request = new XMLHttpRequest()
     request.open('GET', url)
 
