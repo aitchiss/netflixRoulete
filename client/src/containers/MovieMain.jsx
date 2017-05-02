@@ -1,6 +1,6 @@
 import React from 'react'
-import MoviesTable from './MoviesTable.jsx'
-import Header from './Header.jsx'
+import MoviesTable from '../components/MoviesTable.jsx'
+import Header from '../components/Header.jsx'
 
 
 class MovieMain extends React.Component{
@@ -8,7 +8,7 @@ class MovieMain extends React.Component{
   constructor(props){
     super(props)
     this.state = {
-      movies = []
+      movies: []
 
     }
   }
@@ -19,7 +19,7 @@ class MovieMain extends React.Component{
     request.open('GET', url)
 
     request.onload = () =>{
-      if(request.response ===200){
+      if(request.status === 200){
         const jsonSting = request.responseText
         const data = JSON.parse(jsonSting)
         this.setState({movies: data})
@@ -32,7 +32,7 @@ class MovieMain extends React.Component{
     return(
       <div>
       <Header/>
-      <MoviesTable/>
+      <MoviesTable movies ={this.state.movies}/>
       </div>
       )
   }

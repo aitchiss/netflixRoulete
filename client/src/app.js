@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import CountryContainer from './containers/CountryContainer.jsx';
+import MovieMain from './containers/MovieMain.jsx';
 
 window.onload = function () {
   ReactDOM.render(
-    <CountryContainer />,
+    <MovieMain />,
     document.getElementById('app')
   );
 };

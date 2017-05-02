@@ -1,7 +1,16 @@
 import React from 'react'
 
-const MovieTableCell = () => {
-  
+const MovieTableCell = (props) => {
+
+  return(
+
+    <h3>
+      {props.value.show_title}
+    </h3>
+
+    )
+
+
 }
 
 
